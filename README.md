@@ -1,3 +1,3 @@
 The project is a reaction-based web game where players must click on targets that appear randomly on screen to score points, built with JavaScript. The game features various target types including regular white targets for basic points, along with special targets that provide buffs (extra lives, time freeze, larger targets, score multipliers) and red bomb targets. Players start with 2 lives and must strategically manage them during the 3-minute game session. The challenge progressively increases as targets spawn faster and disappear quicker over time. A combo system rewards quick successive clicks with multipliers, encouraging fast reactions and precise timing.
 
-Implemented dynamic target spawning, combo system, power-ups, and progressive difficulty scaling over 3-minute sessions
+- Implemented dynamic target spawning, combo system, power-ups, and progressive difficulty scaling over 3-minute sessions
