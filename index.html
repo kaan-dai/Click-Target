@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Target Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Title Screen -->
+        <div id="title-screen" class="screen">
+            <h1>Click Target Game</h1>
+            <div class="how-to-play" style="text-align: center; margin: 0 auto;">
+                <h2>How to Play</h2>
+                <p>Click targets as they appear on screen to score points!</p>
+                <p>You have 2 lives, so be careful!</p>
+                <br>
+                <ul style="display: inline-block; text-align: left; margin: 0 auto;">
+                    <li style="text-align: center; padding: 0 20px;">Regular targets -> +1 point</li>
+                    <br>
+                    <h3 style="text-align: center; padding: 0 20px;">BUFFS</h3>
+                    <br>
+                    <li style="text-align: center; padding: 0 20px;">Green Target -> Extra Life +1</li>
+                    <li style="text-align: center; padding: 0 20px;">Blue Target -> Slow Targets, Time Freeze, 5 sec</li>
+                    <li style="text-align: center; padding: 0 20px;">Purple Target -> Target Size 1.5x, Score Multiplier 2x, 5 sec</li>
+                    <li style="text-align: center; padding: 0 20px;">Yellow Target -> Score Multiplier 2x</li>
+                    <li style="text-align: center; padding: 0 20px;">Rainbow Giant Target -> +5 points</li>
+                    <br>
+                    <h3 style="text-align: center; padding: 0 20px;">DEBUFFS</h3>
+                    <br>
+                    <li style="text-align: center; padding: 0 20px;">Red Bomb Target -> Lose Life -1</li>
+                </ul>
+            </div>
+            <button id="start-button">Start Game</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen hidden">
+            <div id="hud">
+                <div id="score">Score: 0</div>
+                <div id="timer">Time: 180</div>
+                <div id="lives">Lives: 2</div>
+                <div id="combo">Combo: 0x</div>
+            </div>
+            <div id="game-area"></div>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="game-over-screen" class="screen hidden">
+            <h2>Game Over!</h2>
+            <div id="final-score">Final Score: 0</div>
+            <div id="high-score">High Score: 0</div>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
